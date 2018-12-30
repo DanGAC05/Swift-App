@@ -28,34 +28,50 @@
                                 <rect key="frame" x="155.5" y="106" width="64" height="30"/>
                                 <state key="normal" title="Push Me!"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WxQ-i1-MAg"/>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6VI-2D-tFB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RX-tw-K5i">
-                                <rect key="frame" x="135" y="186" width="105" height="30"/>
-                                <state key="normal" title="Another Button"/>
-                                <connections>
-                                    <action selector="anotherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Oe-CA-6pm"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEu-aG-dVE">
+                                <rect key="frame" x="137.5" y="201" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="D8l-Cz-uHm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2r-6E-rlm">
+                                <rect key="frame" x="137.5" y="156" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="by7-tB-FaJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vAs-aJ-Nna" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4TX-Jy-Gdp"/>
                             <constraint firstItem="vAs-aJ-Nna" firstAttribute="top" secondItem="lZt-Wt-nEq" secondAttribute="bottom" constant="15" id="4dd-mj-ZNT"/>
                             <constraint firstItem="lZt-Wt-nEq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="80B-fB-bUC"/>
-                            <constraint firstItem="4RX-tw-K5i" firstAttribute="top" secondItem="vAs-aJ-Nna" secondAttribute="bottom" constant="50" id="dpT-Qs-qqz"/>
+                            <constraint firstItem="sEu-aG-dVE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9cp-Bb-Xkk"/>
+                            <constraint firstItem="o2r-6E-rlm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CLo-y5-Kxv"/>
+                            <constraint firstItem="sEu-aG-dVE" firstAttribute="top" secondItem="o2r-6E-rlm" secondAttribute="bottom" constant="15" id="Kb5-9d-pRz"/>
+                            <constraint firstItem="o2r-6E-rlm" firstAttribute="top" secondItem="vAs-aJ-Nna" secondAttribute="bottom" constant="20" id="bdP-7V-9xz"/>
                             <constraint firstItem="lZt-Wt-nEq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4q-BH-5xH"/>
-                            <constraint firstItem="4RX-tw-K5i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ple-Qr-3DG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="lZt-Wt-nEq" id="MFf-D6-JQz"/>
+                        <outlet property="text1" destination="o2r-6E-rlm" id="a5e-hn-giT"/>
+                        <outlet property="text2" destination="sEu-aG-dVE" id="L8c-SI-dlh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
 </document>

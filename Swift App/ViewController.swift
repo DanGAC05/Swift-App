@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Swift App
 //
-//  Created by Laura Chrest on 12/29/18.
+//  Created by Dan Chrest on 12/29/18.
 //  Copyright © 2018 Dan Chrest. All rights reserved.
 //
 
@@ -12,21 +12,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var coolLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     
     @IBAction func buttonTapped(_ sender: Any) {
-        tapCount = tapCount + 1
         
-        if tapCount >= 20 {
-            coolLabel.text = "You have tapped 20 times or greater"
-        }
+        coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        
     }
     
-    @IBAction func anotherButton(_ sender: Any) {
-        coolLabel.text = "Buttons are cool!"
     
-    }
     
     
     override func viewDidLoad() {
